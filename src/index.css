@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0%;
+}
+
+img{
+    border-radius: 0px;
+    width: 200px;
+    height: 250px;
+}
+
+.Main{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(135, 135, 135);
+    margin: 0px;
+    padding: 0%;
+}
+
+.Main-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.Cards{
+    margin: 0px 25px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
