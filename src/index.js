@@ -5,11 +5,13 @@ import ReactDOM from 'react-dom';
 // import Calculator from './Calculator';
 // import NetflixCard from './NetflixCard';
 // import NetflixMain from './NetflixMain';
-import ContextApi from './ContextApiPractice/ContextApi';
+// import ContextApi from './ContextApiPractice/ContextApi';
+// import App from './useEffect/App';
+import App from './PokemonAPI/App';
 
 ReactDOM.render(
   <>
-  <ContextApi />
+  <App />
   </>
   , document.getElementById("root")
 );
