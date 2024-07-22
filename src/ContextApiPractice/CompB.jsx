@@ -1,9 +1,12 @@
-import React from "react";
-import CompC from "./CompC";
+import React, { useContext } from "react";
+import {FirstName, LastName } from "./ContextApi";
 
 const CompB = ()=>{
+    const fName = useContext(FirstName);
+    const lName = useContext(LastName);
+
     return <>
-        <CompC />
+        <h1>My name is {fName} {lName}</h1>
     </>
 }
 
