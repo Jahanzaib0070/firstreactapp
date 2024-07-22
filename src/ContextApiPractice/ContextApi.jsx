@@ -1,15 +1,18 @@
-import React, { createContext } from "react";
+import React, { createContext, useContext } from "react";
 import CompA from "./CompA";
 
-const myName = createContext();
-const ContextApi = ()=>{    
+const FirstName = createContext();
+const LastName = createContext();
 
-    return (<>
-        <myName.Provider value={"Mohammad Jahanzaib"}>
-            <CompA />
-        </myName.Provider>
-    </>);
+const ContextApi = ()=>{
+    return <>
+        <FirstName.Provider value={"Mohammad"}>
+            <LastName.Provider value={"Jahanzaib"}>
+                <CompA />
+            </LastName.Provider>
+        </FirstName.Provider>
+    </>
 }
 
 export default ContextApi;
-export {myName};
+export {FirstName, LastName};
