@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import "./index.css";
 // import App from './App';
 // import Calculator from './Calculator';
@@ -9,9 +10,8 @@ import ReactDOM from 'react-dom';
 // import App from './useEffect/App';
 import App from './PokemonAPI/App';
 
-ReactDOM.render(
-  <>
-  <App />
-  </>
-  , document.getElementById("root")
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );

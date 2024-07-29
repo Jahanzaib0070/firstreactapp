@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const App = () => {
-  const [num, setNum] = useState(1); // Initialize with a default value
+  const [num, setNum] = useState(0);
   const [name, setName] = useState("");
   const [moves, setMoves] = useState(0);
 
